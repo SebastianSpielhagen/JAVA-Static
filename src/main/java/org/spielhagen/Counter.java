@@ -24,17 +24,27 @@ public class Counter {
     public String toString() {
         return "Total Count: " + totalCount + ", Instance Count: " + instanceCount;
     }
-
+    // Erstellen von zwei Instanzen der Counter-Klassen und Aufrufen der Methoden "incrementTotalCount()" und "incrementInstanceCount()".
     public static void main(String[] args) {
         Counter obj1 = new Counter();
         Counter obj2 = new Counter();
 
+        // Inkrementiere den Gesamtzähler (totalCount) ohne Verwendung von Objekten (statische Methode)
         incrementTotalCount();
+
+        // Inkrementiere den Instanzzähler (instanceCount) für obj1 (instanzspezifische Methode)
         obj1.incrementInstanceCount();
+
+        // Ausgabe der aktuellen Werte von totalCount und instanceCount für obj2
         System.out.println(obj2);
+
+        // Inkrementiere erneut den Gesamtzähler (totalCount) ohne Verwendung von Objekten (statische Methode)
         incrementTotalCount();
+
+        // Inkrementiere den Instanzzähler (instanceCount) für obj2 (instanzspezifische Methode)
         obj2.incrementInstanceCount();
 
+        // Ausgabe der aktuellen Werte von totalCount und instanceCount für obj1 und obj2
         System.out.println(obj1); // Gibt die aktuellen Werte von totalCount und instanceCount für obj1 aus
         System.out.println(obj2); // Gibt die aktuellen Werte von totalCount und instanceCount für obj2 aus
     }
