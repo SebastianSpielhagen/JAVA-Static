@@ -3,8 +3,8 @@ package org.spielhagen;
 // Die statische Variable "totalCount" ist auf Klassenebene und wird gemeinsam von allen Instanzen der Klasse geteilt.
 // Die instanzspezifische Variable "instanceCount" ist an jedes Objekt gebunden und hat eine eigene Kopie pro Instanz.
 public class Counter {
-    private static int totalCount = 2;
-    private int instanceCount = 5;
+    private static int totalCount = 0;
+    private int instanceCount = 0;
 
     // Die statische Methode "incrementTotalCount()" erhöht den Wert der statischen Variable "totalCount" um 1.
     // Da die Methode statisch ist, wird sie auf Klassenebene aufgerufen und wirkt sich auf "totalCount" aus, der von allen Instanzen geteilt wird.
@@ -31,7 +31,7 @@ public class Counter {
 
         obj1.incrementTotalCount();
         obj1.incrementInstanceCount();
-
+        System.out.println(obj2);
         obj2.incrementTotalCount();
         obj2.incrementInstanceCount();
 
