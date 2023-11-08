@@ -29,10 +29,10 @@ public class Counter {
         Counter obj1 = new Counter();
         Counter obj2 = new Counter();
 
-        obj1.incrementTotalCount();
+        incrementTotalCount();
         obj1.incrementInstanceCount();
         System.out.println(obj2);
-        obj2.incrementTotalCount();
+        incrementTotalCount();
         obj2.incrementInstanceCount();
 
         System.out.println(obj1); // Gibt die aktuellen Werte von totalCount und instanceCount für obj1 aus
